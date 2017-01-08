@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="tw.com.sake.testgame01_colorpick.MainActivity"
+    >
+
+    <TextView
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/tv01"
+        android:layout_weight="0.08"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="60"
+        android:progress="0"
+        android:layout_below="@+id/tv01"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49"
+        android:id="@+id/imageV1"
+        android:layout_below="@+id/tv01"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49"
+        android:id="@+id/imageV2"
+        android:layout_below="@+id/tv01"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/LLayout3"
+        android:layout_marginBottom="77dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="開始"
+            android:id="@+id/StartB"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暫停"
+            android:id="@+id/StopB"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="終止"
+            android:id="@+id/EndB"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:id="@+id/RLayoutB"
+        android:layout_above="@+id/LLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/yellow"
+        android:id="@+id/YellowB"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/red"
+        android:id="@+id/RedB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/green"
+        android:id="@+id/GreenB"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/blue"
+        android:id="@+id/BlueB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+</RelativeLayout>
